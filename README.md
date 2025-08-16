@@ -24,5 +24,54 @@ Built with Go and `cobra`.
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/scdb.git
+git clone https://github.com/ksabanty/scdb.git
 cd scdb
+```
+
+---
+
+## ⚙️ Build & Install Libraries
+
+Before building, install required libraries:
+
+```bash
+go get github.com/olekukonko/tablewriter
+go get github.com/spf13/cobra
+```
+
+To build the project:
+
+```bash
+go build -o scdb
+```
+
+---
+
+## 📝 Usage
+
+After building the project, you can use the following commands:
+
+### Add a card
+```bash
+scdb add
+```
+Interactively add a new card to your collection.
+
+### List all cards
+```bash
+scdb list
+```
+Display all cards in your collection in a table format.
+
+### Delete a card
+```bash
+scdb delete
+```
+Remove a card from your collection by specifying criteria.
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
