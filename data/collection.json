@@ -1,16 +1,5 @@
 [
   {
-    "player": "LeBron James",
-    "team": "Los Angeles Lakers",
-    "manufacturer": "Upper Deck",
-    "collection": "Exquisite",
-    "year": "2003",
-    "value": "5000",
-    "rookie": true,
-    "numbered": false,
-    "auto": true
-  },
-  {
     "player": "Michael Jordan",
     "team": "Chicago Bulls",
     "manufacturer": "Fleer",

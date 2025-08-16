@@ -65,9 +65,15 @@ Display all cards in your collection in a table format.
 
 ### Delete a card
 ```bash
-scdb delete
+scdb delete --player "Lebron James" --team "Lakers" --year "2020"
 ```
-Remove a card from your collection by specifying criteria.
+You can specify additional fields (such as `--team`, `--manufacturer`, `--year`, etc.) to uniquely identify and delete the correct card if a player has multiple cards in your collection. At minimum, `--player` is required.
+
+Example:
+```bash
+scdb delete --player "Lebron James" --team "Lakers" --year "2020" --rookie
+```
+This will delete the card matching all provided criteria.
 
 ---
 

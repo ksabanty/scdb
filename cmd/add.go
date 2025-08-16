@@ -9,30 +9,34 @@ import (
 )
 
 var (
-	player         string
-	team           string
-	manufacturer   string
-	collectionName string
-	year           string
-	value          string
-	rookie         bool
-	numbered       bool
-	auto           bool
+	player string
+	team   string
+	manuf  string
+	coll   string
+	yr     string
+	val    string
+	r      bool
+	num    bool
+	auto   bool
 )
 
 var addCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Add a new card to your collection",
 	Run: func(cmd *cobra.Command, args []string) {
+		if player == "" || team == "" {
+			fmt.Println("Error: Both player and team fields are required.")
+			return
+		}
 		card := models.Card{
 			Player:       player,
 			Team:         team,
-			Manufacturer: manufacturer,
-			Collection:   collectionName,
-			Year:         year,
-			Value:        value,
-			Rookie:       rookie,
-			Numbered:     numbered,
+			Manufacturer: manuf,
+			Collection:   coll,
+			Year:         yr,
+			Value:        val,
+			Rookie:       r,
+			Numbered:     num,
 			Auto:         auto,
 		}
 
@@ -49,12 +53,12 @@ func init() {
 
 	addCmd.Flags().StringVar(&player, "player", "", "Player name")
 	addCmd.Flags().StringVar(&team, "team", "", "Team name")
-	addCmd.Flags().StringVar(&manufacturer, "manufacturer", "", "Card manufacturer")
-	addCmd.Flags().StringVar(&collectionName, "collection", "", "Collection name")
-	addCmd.Flags().StringVar(&year, "year", "", "Year of the card")
-	addCmd.Flags().StringVar(&value, "value", "", "Card value")
-	addCmd.Flags().BoolVar(&rookie, "rookie", false, "Is rookie card")
-	addCmd.Flags().BoolVar(&numbered, "numbered", false, "Is numbered card")
+	addCmd.Flags().StringVar(&manuf, "manufacturer", "", "Card manufacturer")
+	addCmd.Flags().StringVar(&coll, "collection", "", "Collection name")
+	addCmd.Flags().StringVar(&yr, "year", "", "Year")
+	addCmd.Flags().StringVar(&val, "value", "", "value")
+	addCmd.Flags().BoolVar(&r, "rookie", false, "Is rookie")
+	addCmd.Flags().BoolVar(&num, "numbered", false, "Is numbered")
 	addCmd.Flags().BoolVar(&auto, "auto", false, "Is autographed")
 
 	addCmd.MarkFlagRequired("player")
