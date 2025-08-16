@@ -76,8 +76,3 @@ scdb delete --player "Lebron James" --team "Lakers" --year "2020" --rookie
 This will delete the card matching all provided criteria.
 
 ---
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
