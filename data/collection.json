@@ -1,0 +1,57 @@
+[
+  {
+    "player": "LeBron James",
+    "team": "Los Angeles Lakers",
+    "manufacturer": "Upper Deck",
+    "collection": "Exquisite",
+    "year": "2003",
+    "value": "5000",
+    "rookie": true,
+    "numbered": false,
+    "auto": true
+  },
+  {
+    "player": "Michael Jordan",
+    "team": "Chicago Bulls",
+    "manufacturer": "Fleer",
+    "collection": "Fleer Ultra",
+    "year": "1986",
+    "value": "20000",
+    "rookie": true,
+    "numbered": false,
+    "auto": false
+  },
+  {
+    "player": "Kobe Bryant",
+    "team": "Los Angeles Lakers",
+    "manufacturer": "Topps",
+    "collection": "Topps Chrome",
+    "year": "1996",
+    "value": "8000",
+    "rookie": true,
+    "numbered": false,
+    "auto": false
+  },
+  {
+    "player": "Tom Brady",
+    "team": "New England Patriots",
+    "manufacturer": "Playoff Contenders",
+    "collection": "Rookie Ticket",
+    "year": "2000",
+    "value": "15000",
+    "rookie": true,
+    "numbered": false,
+    "auto": true
+  },
+  {
+    "player": "Jayson Tatum",
+    "team": "Boston Celtics",
+    "manufacturer": "Panini",
+    "collection": "Chronicles",
+    "year": "2018",
+    "value": "400",
+    "rookie": true,
+    "numbered": true,
+    "auto": true
+  }
+]
